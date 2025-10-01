@@ -7,4 +7,4 @@ Michelle Ogunade
 L00176523
 
 ## Lecturer
-Michelle Ogunade
+Ruth Lennon
