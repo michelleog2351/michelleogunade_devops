@@ -1,5 +1,10 @@
 {
+  "scripts": {
+    "test": "mocha",
+    "docs": "jsdoc -c jsdoc.json"
+  },
   "devDependencies": {
+    "jsdoc": "^4.0.5",
     "mocha": "^11.7.4"
   }
 }
