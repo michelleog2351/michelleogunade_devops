@@ -5,7 +5,6 @@
   },
   "opts": {
     "destination": "docs",
-    "recurse": true,
-    "template": "default"
+    "recurse": true
   }
 }

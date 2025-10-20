@@ -1,4 +1,8 @@
-/// create a login form
+/**
+ * @author Michelle Ogunade
+ * @description This function checks if the provided username and password match the predefined credentials.
+ * @version 1.0
+ */
 
 $(document).ready(function () {
   $("#loginButton").click(function (e) {
