@@ -1,6 +1,9 @@
 -- gameDB.sql
 -- Creates tables for storing character and game data
 
+select * FROM Characters;
+select * FROM Battles;
+
 CREATE DATABASE IF NOT EXISTS gameDB;
 USE gameDB;
 
