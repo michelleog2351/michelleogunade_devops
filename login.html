@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="js/login.js"></script>
+
+	<title>Login Page</title>
+
+	<style type="text/css">
+
+	</style>
+</head>
+
+
+  <body class="bg-light">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="nav">
+
+	<div class="container-fluid mt-5">
+
+		<a class="navbar-brand" href="index.html">Home</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		  <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a class="nav-link" href="about.html">About</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="contact.html">Contact</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="login.html">Login</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="register.html">Register</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+
+	<hr>
+  <div class="row justify-content-center">
+	  <div class="col-md-6">
+		<h1 class="text-center mb-4">Login</h1>
+			<hr>
+	
+ <form name="loginForm" id="loginForm">
+		  <table class="table table-bordered shadow-sm">
+			<tbody>
+<tr>
+	<th><label for="userNameID" class="form-label">Username</label></th>
+  <td><input type="text" class="form-control" id="userNameID" name="username" placeholder="example@fungames.com" required></td>
+              </tr>
+
+              <tr>
+                <th><label for="passwordID" class="form-label">Password</label></th>
+                <td><input type="password" class="form-control" id="passwordID" name="password" placeholder="Enter password..." required></td>
+              </tr>
+
+              <tr>
+                <th></th>
+ <td>
+                  <button type="submit" id="loginButton" class="btn btn-primary w-100">Login</button>
+				   <span id="errorSpan" class="text-danger fw-semibold"></span>
+				</td>
+              </tr>
+		</tbody>
+	</table>
+	</form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
