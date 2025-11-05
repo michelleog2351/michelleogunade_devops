@@ -43,16 +43,16 @@ function nav() {
     </div>`;
 
   $("nav").html(navOutPut);
-
-  $("#logout").click(function (e) {
-    e.preventDefault();
-    sessionStorage.removeItem("login");
-    location.replace("login.html");
-  });
 }
+//   $("#logout").click(function (e) {
+//     e.preventDefault();
+//     sessionStorage.removeItem("login");
+//     location.replace("login.html");
+//   });
+// }
 
-function requireLogin() {
-  if (sessionStorage.getItem("login") !== "true") {
-    window.location.href = "login.html";
-  }
-}
+// function requireLogin() {
+//   if (sessionStorage.getItem("login") !== "true") {
+//     window.location.href = "login.html";
+//   }
+// }
