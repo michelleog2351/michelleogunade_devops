@@ -1,18 +1,24 @@
-# michelleogunade_devops
+# DevOps Assignment 2025
 
-### Name: Michelle Ogunade
+### michelleogunade_devops
 
-### Student No.: L00176523
+[![GitHub Actions Demo](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/github-actions-demo.yml)
 
-## Lecturer: Ruth Lennon
+Name: Michelle Ogunade
 
-🗡️ My Web Project
-# 📖 Overview
+Student No.: L00176523
+
+Lecturer: Ruth Lennon
+
+---
+
+# 🥷 My Web Project
+## 📖 Overview
 
 This project web application, built using JavaScript, HTML, CSS and Bootstrap with backend integration for data persistence and user management.
 It aims to feature user accounts, role-based access (admin, player, data manager), and gameplay-related features.
 
-# 🧠 Objectives 
+## 🧠 Objectives 
 
 Implement secure authentication and login system.
 
@@ -22,7 +28,7 @@ Use JSDoc to generate documentation automatically for all classes and functional
 
 Maintain clean, testable code following industry best practices.
 
-# ⚙️ Tech Stack
+## ⚙️ Tech Stack
 
 | Layer           | Technology                     |
 | :-------------- | :----------------------------- |
@@ -33,7 +39,7 @@ Maintain clean, testable code following industry best practices.
 | Version Control | Git & GitHub                   |
 
 
-# 🚀 Features
+## 🚀 Features
 
 User account creation and login
 
@@ -46,7 +52,7 @@ Game logic classes (Characters, Battles, Levels)
 Auto-generated documentation via JSDoc
 
 
-# 🧾 Definition of Done (DoD)
+## 🧾 Definition of Done (DoD)
 
 A feature is considered done when:
 
@@ -58,7 +64,7 @@ Peer review completed.
 
 Feature branch merged successfully with no conflicts.
 
-# 🧩 Project Roles
+## 🧩 Project Roles
 | Role	             | Responsibility |
 | :-------------- | :----------------------------- |
 | Project Manager	   | Oversees project planning and issue tracking |
@@ -67,51 +73,49 @@ Feature branch merged successfully with no conflicts.
 | Data Manager	     | Ensures proper data persistence and validation |
 
 
-# 🧱 Installation & Setup
-# Clone repository
+## 🧱 Installation & Setup
+### Clone repository
 
 ```
 git clone [https://github.com/michelleog2351/michelleogunade_devops/](https://github.com/michelleog2351/michelleogunade_devops.git)
 ```
 
-# Navigate to directory
-cd DemonSlayerProject
+## Navigate to directory
+cd [ProjectName]
 
-# Install dependencies
+## Install dependencies
 
 ```
 npm install
 ```
 
-# Run development server
+## Run development server
 
 ```
 npm start
 ```
 
-# Generate documentation
+## Generate documentation
 
 ```
 npm run docs
 ```
 
-🧪 Running Tests
+## 🧪 Running Tests
 
 ```
 npm test
 ```
 
-📚 Documentation
+## 📚 Documentation
 
-# Documentation is generated automatically using JSDoc and stored in the /docs folder.
+### Documentation is generated automatically using JSDoc and stored in the /docs folder.
 To regenerate documentation:
 
 ```
 npm run docs
 ```
 
-👥 Contributors
+## 👥 Contributor(s)
 
 @michelleog2351 (Project Owner)
-
-[![GitHub Actions Demo](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/github-actions-demo.yml)
