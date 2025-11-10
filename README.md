@@ -113,3 +113,5 @@ npm run docs
 👥 Contributors
 
 @michelleog2351 (Project Owner)
+
+[![GitHub Actions Demo](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/github-actions-demo.yml)
