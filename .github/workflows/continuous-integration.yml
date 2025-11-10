@@ -1,0 +1,24 @@
+name: Feature Branch CI
+run-name: ${{ github.actor }} is testing out continuous integration 
+on: 
+  push:
+    branches:
+      - "*"
+      - "!main"
+
+jobs:
+  lint:
+    uses: github/super-linter/.github/workflows/super-linter.yml@v6
+    
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install
+      - run: npm test
+      
+  secret-scan:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: trufflesecurity/trufflehog@main
