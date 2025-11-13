@@ -13,11 +13,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Fetch main branch for comparison
+        run:  git fetch origin main:main
+
       - name: Run Super-Linter
         uses: github/super-linter/slim@v6
         env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              DEFAULT_BRANCH: main
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run Super-Linter
+        uses: github/super-linter/slim@v6
+        env:
+              DEFAULT_BRANCH: main
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
     
   test:
     runs-on: windows-latest
