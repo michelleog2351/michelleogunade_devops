@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "mocha",
+    "test": "mocha src/tests/*.js"
     "docs": "jsdoc -c jsdoc.json"
   },
   "devDependencies": {
