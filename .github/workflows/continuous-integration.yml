@@ -8,17 +8,31 @@ on:
 
 jobs:
   lint:
-    uses: github/super-linter/.github/workflows/super-linter.yml@v6
+   runs-on: ubuntu-latest
+   steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Super-Linter
+        uses: github/super-linter/slim@v6
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
   test:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: npm install
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
       - run: npm test
       
   secret-scan:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: trufflesecurity/trufflehog@main
+       - name: Checkout code
+         uses: actions/checkout@v4
+       - name: Scan for secrets
+         uses: trufflesecurity/trufflehog@main
