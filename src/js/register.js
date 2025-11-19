@@ -185,12 +185,13 @@ $(document).ready(function () {
         phone_no: registerphoneNo,
         username: registerUsername,
         password: registerPassword,
-        balance: 0.0, // Starting balance
+        // balance: 0.0, // Starting balance
       }),
       success: function (response) {
         alert(response);
         $("#registerButton").prop("disabled", false);
         location.replace("http://localhost:3000/index.html");
+        console.log("Well done, you have successfully registered!")
       },
       error: function (xhr, status, error) {
         alert(xhr.responseText);

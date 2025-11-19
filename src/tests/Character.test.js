@@ -1,7 +1,7 @@
 // mocha test for Character class
 
 const assert = require("assert");
-const Character = require("../Character");
+const Character = require("../js/Character");
 
 describe("Character Class", function () {
   it("should return the correct name", function () {

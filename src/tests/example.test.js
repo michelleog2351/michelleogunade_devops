@@ -1,4 +1,6 @@
-import { assert } from "node:assert";
+// import { assert } from "node:assert";
+
+const assert = require("assert");
 
 describe("Array", function () {
   describe("#indexOf()", function () {
