@@ -6,7 +6,7 @@
   "devDependencies": {
     "jsdoc": "^4.0.5",
     "mocha": "^11.7.5",
-    "semantic-release": "^24.2.9"
+    "semantic-release": "^25.0.2"
   },
   "release": {
     "branches": ["main"]
