@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint:
-    uses: github/super-linter/.github/workflows/super-linter.yml@v6
+    uses: .github/workflows/super-linter.yml@v6
     
   test:
     runs-on: windows-latest
