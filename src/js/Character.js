@@ -1,7 +1,7 @@
 /**
  * Represents a character in the game.
- * @class
- * @author
+ * @class Character
+ * @author Michelle Ogunade
  * @version 1.0
  */
 
