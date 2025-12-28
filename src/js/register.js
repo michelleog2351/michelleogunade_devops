@@ -77,6 +77,7 @@ $(document).ready(function () {
       },
       error: xhr => {
         alert(xhr.responseText);
+        console.error("Registration failed:", xhr.responseText);
         $("#registerButton").prop("disabled", false);
       }
     });
