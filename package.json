@@ -1,7 +1,10 @@
 {
   "name": "michelleogunade-devops",
   "version": "1.0.0",  
-  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michelleog2351/michelleogunade_devops.git"
+  },
   "scripts": {
     "test": "mocha src/test/*.js",
     "docs": "jsdoc -c jsdoc.json"
