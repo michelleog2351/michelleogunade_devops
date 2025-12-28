@@ -1,9 +1,17 @@
 # DevOps Assignment 2025
 
-### michelleogunade_devops
+Status Badges
+---
+[![Release](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/release.yml/badge.svg)](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/release.yml)
+
+[![Lint Code](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/lint.yml/badge.svg)](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/lint.yml)
+
+[![Feature Branch CI](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/continuous-integration.yml/badge.svg?branch=develop)](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/continuous-integration.yml)
 
 [![GitHub Actions Demo](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/michelleog2351/michelleogunade_devops/actions/workflows/github-actions-demo.yml)
 
+Details:
+---
 Name: Michelle Ogunade
 
 Student No.: L00176523
