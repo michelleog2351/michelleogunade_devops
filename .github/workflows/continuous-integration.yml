@@ -1,6 +1,6 @@
 name: Feature Branch CI
-run-name: ${{ github.actor }} is testing out continuous integration 
-on: 
+run-name: ${{ github.actor }} is testing out continuous integration
+on:
   push:
     branches:
       - "*"
@@ -8,34 +8,54 @@ on:
 
 jobs:
   lint:
-   runs-on: ubuntu-latest
-   steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Fetch main branch for comparison
-        run:  git fetch origin main:main
+        run: git fetch origin main:main
 
       - name: Run Super-Linter
         uses: super-linter/super-linter@v6
         env:
-              DEFAULT_BRANCH: main
-              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  jsdoc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate JSDoc
+        run: npm run docs
+
+      - name: Upload documentation artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jsdoc-docs
+          path: docs/
+
   test:
     runs-on: windows-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Install dependencies
-        run:  npm install
+        run: npm install
       - name: Run tests
-        run:  npm test
-      
+        run: npm test
+
   secret-scan:
     runs-on: ubuntu-latest
     steps:
-       - name: Checkout code
-         uses: actions/checkout@v4
-       - name: Scan for secrets
-         uses: trufflesecurity/trufflehog@main
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Scan for secrets
+        uses: trufflesecurity/trufflehog@main

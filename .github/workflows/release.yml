@@ -7,14 +7,22 @@ on:
 
 jobs:
   release:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    environment: production
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3#
+
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: npm install
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Clear npm cache
-      - run: npm cache clean --force
+        run: npm cache clean --force
+
       - name: Run semantic release
-      - run: npx semantic-release
+        run: npx semantic-release
+    env:
+      GH_TOKEN: ${{ secrets.MAIN_DEVOPS }}

@@ -6,6 +6,7 @@
  */
 const validUsername = "michelle@fungames.com";
 const validPassword = "1020DevOps!";
+
 $(document).ready(function () {
   nav();
   footer();
