@@ -4,8 +4,6 @@
  * @description This function checks if the provided username and password match the predefined credentials.
  * @version 1.0
  */
-const validUsername = "michelle@fungames.com";
-const validPassword = "1020DevOps!";
 
 $(document).ready(function () {
   nav();
