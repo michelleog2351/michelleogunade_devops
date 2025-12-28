@@ -6,17 +6,20 @@ on:
       - main
 
 permissions:
-  contents: write
-  id-token: write
-  packages: write
+  contents: write          # Needed for semantic-release to push tags
+  id-token: write          # Required for OIDC authentication to npm
+  packages: write          # Allows publishing to npm (via OIDC)
 
 jobs:
   release:
     runs-on: ubuntu-latest
     environment: production
+
     steps:
+      - name: Checkout code
       - uses: actions/checkout@v3
 
+      - name: Setup Node.js
       - uses: actions/setup-node@v3
         with:
           node-version: 22
@@ -31,3 +34,4 @@ jobs:
         run: npx semantic-release
     env:
       GH_TOKEN: ${{ secrets.MAIN_DEVOPS }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
