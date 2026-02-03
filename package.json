@@ -14,7 +14,7 @@
     "globals": "^16.5.0",
     "jsdoc": "^4.0.5",
     "mocha": "^11.7.5",
-    "semantic-release": "^25.0.2"
+    "semantic-release": "^25.0.3"
   },
   "release": {
     "branches": [
